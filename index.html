@@ -3,22 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title shown in browser tab -->
     <title>Pricing Plans — HTML version</title>
+    <!-- Font loading: Inter family used by all text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main stylesheet for layout and visual style -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Floating label to identify this static HTML version -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+    <!-- Pricing cards wrapper: keeps all plans in one row -->
     <div class="cards-container">
+        <!-- Plan card: Hobby -->
         <div class="card">
             <div class="card-top">
+                <!-- Card heading and plan name -->
                 <h3 class="card-title">Hobby</h3>
+                <!-- Price area: free plan has amount only -->
                 <p class="card-price">
                     <span class="card-price-amount">Free</span>
                 </p>
                 <div class="card-content">
+                    <!-- Benefits intro and feature checklist -->
                     <p class="includes-text">Includes:</p>
                     <ul class="features-list">
                         <li>
@@ -36,16 +45,21 @@
                     </ul>
                 </div>
             </div>
+            <!-- Primary card action -->
             <button class="download-button secondary">Download</button>
         </div>
+        <!-- Plan card: Pro -->
         <div class="card">
             <div class="card-top">
+                <!-- Card heading and plan name -->
                 <h3 class="card-title">Pro</h3>
+                <!-- Price area: amount + billing period -->
                 <p class="card-price">
                     <span class="card-price-amount">$20</span>
                     <span class="card-price-period">/mo.</span>
                 </p>
                 <div class="card-content">
+                    <!-- Upsell message and expanded feature checklist -->
                     <p class="includes-text">Everything in Hobby, plus:</p>
                     <ul class="features-list">
                         <li>
@@ -67,7 +81,43 @@
                     </ul>
                 </div>
             </div>
+            <!-- Primary conversion action for paid plan -->
             <button class="download-button primary">Get Pro</button>
+        </div>
+        <!-- Plan card: Enterprise -->
+        <div class="card">
+            <div class="card-top">
+                <!-- Card heading and plan name -->
+                <h3 class="card-title">Enterprise</h3>
+                <!-- Price area: custom pricing contact flow -->
+                <p class="card-price">
+                    <span class="card-price-amount">Custom</span>
+                </p>
+                <div class="card-content">
+                    <!-- Enterprise-only capabilities -->
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            SSO and advanced security
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Dedicated account support
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Team usage analytics
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Priority onboarding
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- CTA for enterprise sales contact -->
+            <button class="download-button secondary">Contact Sales</button>
         </div>
     </div>
 </body>
