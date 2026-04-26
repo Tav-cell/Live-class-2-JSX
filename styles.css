@@ -148,6 +148,22 @@ body {
     background-color: #333;
 }
 
+/* Outline button variant for tertiary actions */
+.download-button.tertiary {
+    background-color: transparent;
+    border: 1px solid #26251e;
+    color: #26251e;
+}
+
+/* Outline button hover/active states */
+.download-button.tertiary:hover {
+    background-color: rgba(38, 37, 30, 0.08);
+}
+
+.download-button.tertiary:active {
+    background-color: rgba(38, 37, 30, 0.12);
+}
+
 /* Fixed badge showing page version context */
 .page-label {
     position: fixed;
